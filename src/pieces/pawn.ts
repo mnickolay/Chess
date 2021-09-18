@@ -1,4 +1,5 @@
 import { Color, IPiece, Movement } from ".";
+import { A2, B2, C2, D2, E2, F2, G2, H2, A7, B7, C7, D7, E7, F7, G7, H7 } from "../board/row";
 
 export const whitePawn1: IPiece = {
     id: "wp1",

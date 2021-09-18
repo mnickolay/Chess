@@ -1,4 +1,5 @@
 import { Color, IPiece, Movement } from ".";
+import { C8, F8 } from "../board/row";
 import { C1, F1 } from "../board/row/one";
 
 export const whiteBishop1: IPiece = {

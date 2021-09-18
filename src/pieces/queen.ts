@@ -1,4 +1,5 @@
 import { Color, IPiece, Movement } from ".";
+import { D8 } from "../board/row";
 import { D1 } from "../board/row/one";
 
 export const whiteQueen: IPiece = {

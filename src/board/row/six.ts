@@ -1,4 +1,5 @@
 
+import { IRow } from ".";
 import { IBoardSquare } from "..";
 import { Column } from "../Columns";
 import { Row } from "../Rows";

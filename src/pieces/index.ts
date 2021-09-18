@@ -18,9 +18,10 @@ export interface IPiece {
     id: string;
     name: string;
     color: Color;
-    boardSquare?: IBoardSquare
+    boardSquare?: IBoardSquare;
     movement: Movement;
     value: number;
+    controlling?: IBoardSquare;
 }
 
 export * from "./rook";

@@ -1,5 +1,3 @@
-
-import { IRow } from ".";
 import { IBoardSquare } from "..";
 import { Column } from "../Columns";
 import { Row } from "../Rows";
@@ -50,8 +48,4 @@ export const H6: IBoardSquare = {
     id: "H6",
     row: Row.Six,
     column: Column.H,
-}
-
-export const rowSix: IRow = { 
-    rowSquares: [A6, B6, C6, D6, E6, F6, G6, H6,]
 }

@@ -1,4 +1,5 @@
 export enum Row {
+    ZeroIndexFiller,
     One,
     Two,
     Three,

@@ -1,12 +1,13 @@
 export enum Column {
-    "A",
-    "B",
-    "C",
-    "D",
-    "E",
-    "F",
-    "G",
-    "H",
+    ZeroIndexFiller,
+    A,
+    B,
+    C,
+    D,
+    E,
+    F,
+    G,
+    H,
 };
 
 export const ColumnArr = [

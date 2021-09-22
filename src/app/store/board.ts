@@ -1,7 +1,7 @@
 import { Action } from "redux";
 import { IBoardSquare } from "../../board";
 import { squares } from "../../board/squares";
-import { IPiece } from "../../pieces";
+import { blackPieces, IPiece } from "../../pieces";
 
 const LOAD_PIECES = "LOAD_PIECES";
 const WHITE_MOVE = "BOARD_WHTIE_MOVE";
@@ -23,6 +23,12 @@ interface IBlackMove extends Action {
     boardSquare: IBoardSquare;
 }
 
+interface IBoard {
+    squares: IBoardSquare[];
+    whitePieces: IPiece[];
+    blackPieces: IPiece[];
+}
+
 export interface IBoardState {
     board: IBoardSquare[];
     whiteTurn: boolean;
@@ -39,6 +45,9 @@ export function board(
 ): Readonly<IBoardState> {
     switch (action?.type) {
         case LOAD_PIECES:
+            const newBoard = state.board.map((b) => {
+
+            })
             return {
                 ...state,
             }

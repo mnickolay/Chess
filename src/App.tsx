@@ -6,8 +6,6 @@ import { IAppState } from './app/store/reducers';
 function App() {
   const { board } = useSelector((s: IAppState) => s.board);
 
-  console.log(board)
-
   return (
     <Provider store={store}>
       Chess App

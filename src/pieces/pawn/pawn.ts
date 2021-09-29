@@ -1,11 +1,6 @@
 import { Color, IPiece, Movement } from "..";
 
-interface IPawn extends IPiece {
-    hasMoved: boolean;
-    enPassantable: boolean;
-}
-
-export const whitePawn1: IPawn = {
+export const whitePawn1: IPiece = {
     id: "wp1",
     name: "White Pawn 1",
     color: Color.White,
@@ -16,7 +11,7 @@ export const whitePawn1: IPawn = {
     enPassantable: false,
 }
 
-export const whitePawn2: IPawn = {
+export const whitePawn2: IPiece = {
     id: "wp2",
     name: "White Pawn 2",
     color: Color.White,
@@ -27,7 +22,7 @@ export const whitePawn2: IPawn = {
     enPassantable: false,
 }
 
-export const whitePawn3: IPawn = {
+export const whitePawn3: IPiece = {
     id: "wp3",
     name: "White Pawn 3",
     color: Color.White,
@@ -38,7 +33,7 @@ export const whitePawn3: IPawn = {
     enPassantable: false,
 }
 
-export const whitePawn4: IPawn = {
+export const whitePawn4: IPiece = {
     id: "wp4",
     name: "White Pawn 4",
     color: Color.White,
@@ -49,7 +44,7 @@ export const whitePawn4: IPawn = {
     enPassantable: false,
 }
 
-export const whitePawn5: IPawn = {
+export const whitePawn5: IPiece = {
     id: "wp5",
     name: "White Pawn 5",
     color: Color.White,
@@ -60,7 +55,7 @@ export const whitePawn5: IPawn = {
     enPassantable: false,
 }
 
-export const whitePawn6: IPawn = {
+export const whitePawn6: IPiece = {
     id: "wp6",
     name: "White Pawn 6",
     color: Color.White,
@@ -71,7 +66,7 @@ export const whitePawn6: IPawn = {
     enPassantable: false,
 }
 
-export const whitePawn7: IPawn = {
+export const whitePawn7: IPiece = {
     id: "wp7",
     name: "White Pawn 7",
     color: Color.White,
@@ -82,7 +77,7 @@ export const whitePawn7: IPawn = {
     enPassantable: false,
 }
 
-export const whitePawn8: IPawn = {
+export const whitePawn8: IPiece = {
     id: "wp8",
     name: "Black Pawn 8",
     color: Color.Black,
@@ -93,7 +88,7 @@ export const whitePawn8: IPawn = {
     enPassantable: false,
 }
 
-export const blackPawn1: IPawn = {
+export const blackPawn1: IPiece = {
     id: "wp1",
     name: "Black Pawn 1",
     color: Color.Black,
@@ -104,7 +99,7 @@ export const blackPawn1: IPawn = {
     enPassantable: false,
 }
 
-export const blackPawn2: IPawn = {
+export const blackPawn2: IPiece = {
     id: "wp2",
     name: "Black Pawn 2",
     color: Color.Black,
@@ -115,7 +110,7 @@ export const blackPawn2: IPawn = {
     enPassantable: false,
 }
 
-export const blackPawn3: IPawn = {
+export const blackPawn3: IPiece = {
     id: "wp3",
     name: "Black Pawn 3",
     color: Color.Black,
@@ -126,7 +121,7 @@ export const blackPawn3: IPawn = {
     enPassantable: false,
 }
 
-export const blackPawn4: IPawn = {
+export const blackPawn4: IPiece = {
     id: "wp4",
     name: "Black Pawn 4",
     color: Color.Black,
@@ -137,7 +132,7 @@ export const blackPawn4: IPawn = {
     enPassantable: false,
 }
 
-export const blackPawn5: IPawn = {
+export const blackPawn5: IPiece = {
     id: "wp5",
     name: "Black Pawn 5",
     color: Color.Black,
@@ -148,7 +143,7 @@ export const blackPawn5: IPawn = {
     enPassantable: false,
 }
 
-export const blackPawn6: IPawn = {
+export const blackPawn6: IPiece = {
     id: "wp6",
     name: "Black Pawn 6",
     color: Color.Black,
@@ -159,7 +154,7 @@ export const blackPawn6: IPawn = {
     enPassantable: false,
 }
 
-export const blackPawn7: IPawn = {
+export const blackPawn7: IPiece = {
     id: "wp7",
     name: "Black Pawn 7",
     color: Color.Black,
@@ -170,7 +165,7 @@ export const blackPawn7: IPawn = {
     enPassantable: false,
 }
 
-export const blackPawn8: IPawn = {
+export const blackPawn8: IPiece = {
     id: "wp8",
     name: "Black Pawn 8",
     color: Color.Black,

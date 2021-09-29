@@ -3,6 +3,8 @@ import { whitePawn1, whitePawn2, whitePawn3, whitePawn4, whitePawn5, whitePawn6,
         whiteRook1, whiteKnight1, whiteBishop1, whiteQueen, whiteKing, whiteBishop2, whiteKnight2, whiteRook2,
         blackPawn1, blackPawn2, blackPawn3, blackPawn4, blackPawn5, blackPawn6, blackPawn7, blackPawn8,
         blackRook1, blackKnight1, blackBishop1, blackQueen, blackKing, blackBishop2, blackKnight2, blackRook2, } from ".";
+import { Row } from "../board/Rows";
+import { Column } from "../board/Columns";
 
 export enum Color {
     Black,
@@ -23,9 +25,17 @@ export interface IPiece {
     name: string;
     color: Color;
     boardSquareId?: string;
+    row?: Row;
+    column?: Column;
+    possibleMoves?: IBoardSquare[];
     movement: Movement;
     value: number;
     controlling?: IBoardSquare;
+    taken?: boolean;
+    hasMoved?: boolean;
+    enPassantable?: boolean;
+    inCheck?: boolean;
+    hasCastled?: boolean;
 }
 
 export const whitePieces: IPiece[] = [

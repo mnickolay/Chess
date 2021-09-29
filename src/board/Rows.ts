@@ -1,13 +1,13 @@
 export enum Row {
     ZeroIndexFiller,
-    One,
-    Two,
-    Three,
-    Four,
-    Five,
-    Six,
-    Seven,
     Eight,
+    Seven,
+    Six,
+    Five,
+    Four,
+    Three,
+    Two,
+    One,
 };
 
 export const RowArr = [

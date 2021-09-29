@@ -1,24 +1,17 @@
 import { Action } from "redux";
 import { IBoardSquare } from "../../board";
 import { squares } from "../../board/squares";
-import { blackPieces, IPiece } from "../../pieces";
+import { IPiece } from "../../pieces";
 
 const LOAD_PIECES = "LOAD_PIECES";
-const WHITE_MOVE = "BOARD_WHTIE_MOVE";
-const BLACK_MOVE = "BOARD_BLACK_MOVE";
+const MOVE_PIECE = "BOARD_MOVE_PIECE";
 
 interface ILoadPieces extends Action {
     type: typeof LOAD_PIECES;
 }
 
-interface IWhiteMove extends Action {
-    type: typeof WHITE_MOVE;
-    piece: IPiece;
-    boardSquare: IBoardSquare;
-}
-
-interface IBlackMove extends Action {
-    type: typeof BLACK_MOVE;
+interface IMovePiece extends Action {
+    type: typeof MOVE_PIECE;
     piece: IPiece;
     boardSquare: IBoardSquare;
 }
@@ -41,7 +34,7 @@ export function board(
         whiteTurn: true,
         blackTurn: false,
     },
-    action?: ILoadPieces | IWhiteMove | IBlackMove
+    action?: ILoadPieces | IMovePiece
 ): Readonly<IBoardState> {
     switch (action?.type) {
         case LOAD_PIECES:
@@ -51,11 +44,7 @@ export function board(
             return {
                 ...state,
             }
-        case WHITE_MOVE:
-            return {
-                ...state,
-            }
-        case BLACK_MOVE:
+        case MOVE_PIECE:
             return {
                 ...state,
             }
@@ -64,14 +53,8 @@ export function board(
     }
 }
 
-export const whiteMove = (piece: IPiece, boardSquare: IBoardSquare): IWhiteMove => ({
-    type: WHITE_MOVE,
+export const movePiece = (piece: IPiece, boardSquare: IBoardSquare): IMovePiece => ({
+    type: MOVE_PIECE,
     piece,
     boardSquare,
-});
-
-export const blackMove = (piece: IPiece, boardSquare: IBoardSquare): IBlackMove => ({
-    type: BLACK_MOVE,
-    piece,
-    boardSquare, 
 });

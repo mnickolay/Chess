@@ -1,11 +1,6 @@
 import { Color, IPiece, Movement } from "..";
 
-interface IKing extends IPiece {
-    inCheck: boolean;
-    hasCastled: boolean;
-}
-
-export const whiteKing: IKing = {
+export const whiteKing: IPiece = {
     id: "wk",
     name: "White King",
     color: Color.White,
@@ -16,7 +11,7 @@ export const whiteKing: IKing = {
     hasCastled: false,
 }
 
-export const blackKing: IKing = {
+export const blackKing: IPiece = {
     id: "bk",
     name: "Black King",
     color: Color.Black,
